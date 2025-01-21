@@ -1,0 +1,25 @@
+.root {
+  font-weight: 500;
+  color: #024e74;
+  font-size: 13px;
+  line-height: 26px;
+  font-family: "Vazirmatn", sans-serif;
+  text-transform: uppercase;
+  font-style: normal;
+  text-align: left;
+  letter-spacing: normal;
+  white-space: pre-wrap;
+  user-select: text;
+  text-decoration-line: none;
+  text-overflow: clip;
+  opacity: var(--token-iNqYdSenp4OJ);
+  position: relative;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .root {
+    font-size: 10px;
+  }
+}
+.root:focus-within {
+  outline: none;
+}

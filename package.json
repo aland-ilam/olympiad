@@ -1,0 +1,47 @@
+{
+  "name": "tmp-cpa",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@plasmicapp/cli": "^0.1.334",
+    "@plasmicapp/react-web": "^0.2.361",
+    "@plasmicpkgs/antd5": "^0.0.261",
+    "@plasmicpkgs/commerce": "^0.0.206",
+    "@plasmicpkgs/plasmic-basic-components": "^0.0.231",
+    "@plasmicpkgs/plasmic-nav": "^0.0.178",
+    "@plasmicpkgs/react-awesome-reveal": "^3.8.210",
+    "@plasmicpkgs/react-parallax-tilt": "^0.0.208",
+    "@plasmicpkgs/react-scroll-parallax": "^0.0.215",
+    "@plasmicpkgs/react-slick": "^0.0.229",
+    "cra-template": "1.2.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-scripts": "5.0.1",
+    "react-slick": "^0.30.3",
+    "slick-carousel": "^1.8.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
