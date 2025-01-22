@@ -10,7 +10,7 @@ COPY package*.json ./
 # Install dependencies, including legacy peer dependencies
 RUN npm install --legacy-peer-deps
 
-npm install web-vitals
+RUN npm install web-vitals
 
 # Copy the rest of the application code
 COPY . .
