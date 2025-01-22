@@ -55,8 +55,8 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .link > :global(.__wab_flex-container) {
-    margin-left: calc(0px - 2px);
-    width: calc(100% + 2px);
+    margin-left: calc(0px - 0px);
+    width: calc(100% + 0px);
     margin-top: calc(0px - 0px);
     height: calc(100% + 0px);
   }
@@ -70,7 +70,7 @@
     > :global(.__wab_slot)
     > picture
     > img {
-    margin-left: 2px;
+    margin-left: 0px;
     margin-top: 0px;
   }
 }
@@ -197,14 +197,16 @@
 }
 .menu {
   flex-direction: column;
-  position: absolute;
+  position: relative;
   width: auto;
   height: auto;
   max-width: 100%;
   background: #ffffff;
-  left: 0px;
-  top: 55px;
-  right: -36px;
+  left: auto;
+  top: auto;
+  right: auto;
+  align-self: flex-start;
+  margin-top: 10px;
   display: none;
   padding: 8px;
   border: 0.5px solid #3b2f2f47;

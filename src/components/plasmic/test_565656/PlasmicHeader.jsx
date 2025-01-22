@@ -86,33 +86,39 @@ function PlasmicHeader__RenderFunc(props) {
         hasGap={true}
         className={classNames(projectcss.all, sty.freeBox__hUqx7)}
       >
-        <PlasmicLink__
-          className={classNames(projectcss.all, projectcss.a, sty.link__zy28R)}
-          platform={"react"}
-        >
-          <PlasmicImg__
-            data-plasmic-name={"img"}
-            data-plasmic-override={overrides.img}
-            alt={""}
-            className={classNames(sty.img)}
-            displayHeight={"100%"}
-            displayMaxHeight={"none"}
-            displayMaxWidth={"auto"}
-            displayMinHeight={"0"}
-            displayMinWidth={"0"}
-            displayWidth={
-              hasVariant(globalVariants, "screen", "mobileOnly")
-                ? "30px"
-                : "60px"
-            }
-            src={{
-              src: untitledDesignSvgM6ZghyTdTlDe,
-              fullWidth: 375,
-              fullHeight: 375,
-              aspectRatio: 1
-            }}
-          />
-        </PlasmicLink__>
+        <div className={classNames(projectcss.all, sty.freeBox__egydu)}>
+          <PlasmicLink__
+            className={classNames(
+              projectcss.all,
+              projectcss.a,
+              sty.link__zy28R
+            )}
+            platform={"react"}
+          >
+            <PlasmicImg__
+              data-plasmic-name={"img"}
+              data-plasmic-override={overrides.img}
+              alt={""}
+              className={classNames(sty.img)}
+              displayHeight={"100%"}
+              displayMaxHeight={"none"}
+              displayMaxWidth={"auto"}
+              displayMinHeight={"0"}
+              displayMinWidth={"0"}
+              displayWidth={
+                hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? "30px"
+                  : "60px"
+              }
+              src={{
+                src: untitledDesignSvgM6ZghyTdTlDe,
+                fullWidth: 375,
+                fullHeight: 375,
+                aspectRatio: 1
+              }}
+            />
+          </PlasmicLink__>
+        </div>
         <Stack__
           as={"div"}
           hasGap={true}
@@ -202,12 +208,13 @@ function PlasmicHeader__RenderFunc(props) {
                 role={"img"}
               />
             ) : null}
-            <HeaderMenu
-              data-plasmic-name={"headerMenu"}
-              data-plasmic-override={overrides.headerMenu}
-              className={classNames("__wab_instance", sty.headerMenu)}
-            />
           </Stack__>
+          <HeaderMenu
+            data-plasmic-name={"headerMenu"}
+            data-plasmic-override={overrides.headerMenu}
+            className={classNames("__wab_instance", sty.headerMenu)}
+          />
+
           <Stack__
             as={PlasmicLink__}
             data-plasmic-name={"aboutUs"}
@@ -387,6 +394,7 @@ function PlasmicHeader__RenderFunc(props) {
             ) : null}
           </Stack__>
         </Stack__>
+        <div className={classNames(projectcss.all, sty.freeBox__mEo0Z)} />
       </Stack__>
     </Stack__>
   );

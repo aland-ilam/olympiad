@@ -35,6 +35,10 @@
   .header002:global(.__wab_instance):global(.__wab_instance) {
     align-self: center;
     margin-bottom: 0px;
+    left: 0px;
+    top: 0px;
+    z-index: 50;
+    position: fixed;
     flex-shrink: 0;
   }
 }

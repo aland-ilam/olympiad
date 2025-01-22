@@ -77,6 +77,33 @@ function PlasmicHeaderMenu__RenderFunc(props) {
         plasmic_antd_5_hostless_css.plasmic_tokens,
         sty.root
       )}
+      onClick={async event => {
+        const $steps = {};
+        $steps["goToآموزشها"] = true
+          ? (() => {
+              const actionArgs = { destination: `/new-page-2` };
+              return (({ destination }) => {
+                if (
+                  typeof destination === "string" &&
+                  destination.startsWith("#")
+                ) {
+                  document
+                    .getElementById(destination.substr(1))
+                    .scrollIntoView({ behavior: "smooth" });
+                } else {
+                  location.assign(destination);
+                }
+              })?.apply(null, [actionArgs]);
+            })()
+          : undefined;
+        if (
+          $steps["goToآموزشها"] != null &&
+          typeof $steps["goToآموزشها"] === "object" &&
+          typeof $steps["goToآموزشها"].then === "function"
+        ) {
+          $steps["goToآموزشها"] = await $steps["goToآموزشها"];
+        }
+      }}
       data-plasmic-trigger-props={[triggerRootHoverProps]}
     >
       <Button2
@@ -84,6 +111,33 @@ function PlasmicHeaderMenu__RenderFunc(props) {
         data-plasmic-override={overrides.button2}
         className={classNames("__wab_instance", sty.button2)}
         color={"clear"}
+        onClick={async event => {
+          const $steps = {};
+          $steps["goToآموزشها"] = true
+            ? (() => {
+                const actionArgs = { destination: `/new-page-2` };
+                return (({ destination }) => {
+                  if (
+                    typeof destination === "string" &&
+                    destination.startsWith("#")
+                  ) {
+                    document
+                      .getElementById(destination.substr(1))
+                      .scrollIntoView({ behavior: "smooth" });
+                  } else {
+                    location.assign(destination);
+                  }
+                })?.apply(null, [actionArgs]);
+              })()
+            : undefined;
+          if (
+            $steps["goToآموزشها"] != null &&
+            typeof $steps["goToآموزشها"] === "object" &&
+            typeof $steps["goToآموزشها"].then === "function"
+          ) {
+            $steps["goToآموزشها"] = await $steps["goToآموزشها"];
+          }
+        }}
       >
         <Stack__
           as={PlasmicLink__}
